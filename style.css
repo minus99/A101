@@ -7895,7 +7895,8 @@ body.guest-checkout-layout .ems-page-cart-colmn-3, body.guest-checkout-layout .e
       background: #fddb01;
       color: #1e2432; }
       .ems-page-cart-step1 .cart-section-right .ems-cart-summary .bottom-step .prev .btnDefault:hover, .ems-page-cart-step1 .cart-section-right .ems-cart-summary .bottom-step .next .btnDefault:hover {
-        background: #10aac1; }
+        background: #10aac1;
+        color: #fff; }
     .ems-page-cart-step1 .cart-section-right .ems-cart-summary .bottom-step .prev .btnSiparisOnay, .ems-page-cart-step1 .cart-section-right .ems-cart-summary .bottom-step .next .btnSiparisOnay {
       margin-top: 20px; }
     .ems-page-cart-step1 .cart-section-right .ems-cart-summary .bottom-step .prev .btnOnBilgilendirmeFormOnizle,
@@ -9826,7 +9827,7 @@ body.ems-logoff .site-header .mobile-element-fixed-user div a.login {
 
 @media screen and (min-width: 850px) {
   .site-header {
-    min-height: 143px; }
+    min-height: 155px; }
     .site-header-wrapper {
       position: fixed;
       top: 0;
