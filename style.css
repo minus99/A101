@@ -4440,7 +4440,8 @@ button.swiper-pagination-bullet {
   width: 100%; }
   .swiper-container-main .swiper-slide-img img {
     width: auto;
-    max-width: 245px; }
+    max-width: 245px;
+    max-height: 245px; }
 
 .swiper-container-main .swiper-slide-cover {
   height: 420px; }
