@@ -623,7 +623,8 @@ button.swiper-pagination-bullet {
             .title-large, .title-small{
                 margin-bottom: 10px;
                 overflow: hidden;
-                h1, h2{
+                span{
+                    display: block;
                     margin: 0;
                     padding-left: 20px;
                     padding-right: 20px;
@@ -631,9 +632,9 @@ button.swiper-pagination-bullet {
                 }
             }
             .title-large{
-                max-width: 85%;
-                max-height: 50px;
-                h1{
+                max-width: 90%;
+                max-height: 49px;
+                span{
                     font-family: $bold;
                     color: $lDark;
                     font-size: 25px;
@@ -642,7 +643,7 @@ button.swiper-pagination-bullet {
             }
             .title-small{
                 max-height: 42px;
-                h2{
+                span{
                     font-family: $regular;
                     color: $darkBlack;
                     font-size: 16px;
@@ -936,7 +937,7 @@ button.swiper-pagination-bullet {
                 padding-bottom: 10px;
                 .title-small{
                     max-height: 40px;
-                    h2{
+                    span{
                         font-size:14px;
                         line-height: 19px;
                     }
