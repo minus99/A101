@@ -7289,8 +7289,7 @@ body.guest-checkout-layout .ems-page-cart-colmn-3, body.guest-checkout-layout .e
             line-height: 1;
             font-size: 25px;
             color: #1e2432;
-            font-family: "bold";
-            padding-left: 5px; }
+            font-family: "bold"; }
             .cart-section-left .ems-grid-default .ems-grid-row .ems-grid-price-total font.netFiyatVrg:before {
               font-family: "tl";
               content: 't';
@@ -7305,15 +7304,17 @@ body.guest-checkout-layout .ems-page-cart-colmn-3, body.guest-checkout-layout .e
             .cart-section-left .ems-grid-default .ems-grid-row .ems-grid-price-total font.netFiyatVrg .d {
               vertical-align: top;
               font-size: 16px; }
-          .cart-section-left .ems-grid-default .ems-grid-row .ems-grid-price-total font.netFiyatVrg, .cart-section-left .ems-grid-default .ems-grid-row .ems-grid-price-total font.topFiyatVrg, .cart-section-left .ems-grid-default .ems-grid-row .ems-grid-price-total font.brFiyatVrg {
+          .cart-section-left .ems-grid-default .ems-grid-row .ems-grid-price-total font.netFiyatVrg, .cart-section-left .ems-grid-default .ems-grid-row .ems-grid-price-total font.topFiyatVrg {
             display: inline-block !important; }
-          .cart-section-left .ems-grid-default .ems-grid-row .ems-grid-price-total font.brFiyatVrg {
+          .cart-section-left .ems-grid-default .ems-grid-row .ems-grid-price-total font.topFiyatVrg {
+            padding-right: 5px; }
+          .cart-section-left .ems-grid-default .ems-grid-row .ems-grid-price-total font.brFiyatVrg, .cart-section-left .ems-grid-default .ems-grid-row .ems-grid-price-total font.topFiyatVrg {
             line-height: 1;
             font-family: "bold";
             font-size: 16px;
             color: #b3b3b3;
             text-decoration: line-through; }
-            .cart-section-left .ems-grid-default .ems-grid-row .ems-grid-price-total font.brFiyatVrg:before {
+            .cart-section-left .ems-grid-default .ems-grid-row .ems-grid-price-total font.brFiyatVrg:before, .cart-section-left .ems-grid-default .ems-grid-row .ems-grid-price-total font.topFiyatVrg:before {
               font-family: "tl";
               content: 't';
               font-size: 13px;
@@ -7323,7 +7324,7 @@ body.guest-checkout-layout .ems-page-cart-colmn-3, body.guest-checkout-layout .e
               position: relative;
               top: 3px;
               margin-right: 2px; }
-            .cart-section-left .ems-grid-default .ems-grid-row .ems-grid-price-total font.brFiyatVrg .d {
+            .cart-section-left .ems-grid-default .ems-grid-row .ems-grid-price-total font.brFiyatVrg .d, .cart-section-left .ems-grid-default .ems-grid-row .ems-grid-price-total font.topFiyatVrg .d {
               vertical-align: top;
               font-size: 12px; }
       .cart-section-left .ems-grid-default .ems-grid-row .ems-grid-delete {
@@ -14609,6 +14610,8 @@ body.search-ready .mod-mini-search-body {
   .widget-free-mode .swiper-button-next,
   .widget-free-mode .swiper-pagination {
     display: none; }
+  .widget .swiper-button-prev, .widget .swiper-button-next {
+    margin-top: 20px; }
   .widget.widget-new-shoes .swiper-inner, .widget.widget-clothing .swiper-inner {
     overflow: hidden !important;
     position: relative; }

@@ -14,6 +14,9 @@
             display: none;
         }
     }
+    .swiper-button-prev, .swiper-button-next{
+        margin-top: 20px;
+    }
     &.widget-new-shoes, &.widget-clothing {
         .swiper-inner {
             overflow: hidden !important;
@@ -22,9 +25,7 @@
     }
     
     ul.emosInfinite{
-        .ems-prd{
-            width: 25%;
-        }
+        .ems-prd{ width: 25%; }
     }
     &.no-controls{
         .swiper-button-prev,

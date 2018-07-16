@@ -681,7 +681,6 @@ body.guest-checkout-layout{
                         font-size: 25px;
                         color: $lDark;
                         font-family: $bold;
-                        padding-left: 5px;
                         &:before{
                             font-family:$tl;
                             content:'t';
@@ -699,10 +698,13 @@ body.guest-checkout-layout{
                             font-size: 16px;
                         }
                     }
-                    &.netFiyatVrg, &.topFiyatVrg, &.brFiyatVrg{
+                    &.netFiyatVrg, &.topFiyatVrg{
                         display: inline-block !important;
                     }
-                    &.brFiyatVrg{  
+                    &.topFiyatVrg{
+                        padding-right: 5px;
+                    }
+                    &.brFiyatVrg, &.topFiyatVrg{  
                         line-height: 1;
                         font-family: $bold;
                         font-size: 16px;
