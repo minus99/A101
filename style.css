@@ -4433,7 +4433,7 @@ button.swiper-pagination-bullet {
 .swiper-container-main .swiper-slide-img {
   text-align: center;
   position: absolute;
-  top: 10px;
+  top: -20px;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -9300,6 +9300,9 @@ body.guest-checkout-layout .ems-page-cart-colmn-3, body.guest-checkout-layout .e
       .site-footer .ems-container-flex .ems-col-2 .master-pass {
         margin-top: 20px;
         text-align: center; }
+  .site-footer .test {
+    width: 100%;
+    margin-top: 30px; }
   .site-footer-menu > ul {
     width: 33.333%;
     max-width: 160px;
@@ -9665,7 +9668,8 @@ body.guest-checkout-layout .ems-page-cart-colmn-3, body.guest-checkout-layout .e
   .site-header .logo h1 a {
     display: block; }
     .site-header .logo h1 a img {
-      max-width: 200px; }
+      max-width: 200px;
+      max-height: 71px; }
 
 .site-discount-banner {
   display: none;
@@ -9845,7 +9849,7 @@ body.ems-logoff .site-header .mobile-element-fixed-user div a.login {
 
 @media screen and (min-width: 850px) {
   .site-header {
-    min-height: 155px; }
+    min-height: 143px; }
     .site-header-wrapper {
       position: fixed;
       top: 0;
@@ -10837,6 +10841,26 @@ body.ems-signup-body .ems-page-default-member-login .ems-signup {
         color: #fff;
         padding: 16px 20px; }
 
+.ems-page-corporate .ems-col-full .navigasyon {
+  padding: 0 20px;
+  margin-bottom: -10px;
+  margin-top: 10px; }
+  @media (min-width: 850px) {
+    .ems-page-corporate .ems-col-full .navigasyon {
+      padding: 0;
+      margin-bottom: 15px;
+      margin-top: -30px; } }
+  .ems-page-corporate .ems-col-full .navigasyon > span > a {
+    display: inline-block !important;
+    vertical-align: middle;
+    font-size: 12px;
+    color: #3b4354;
+    max-width: 150px;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; }
+
 .ems-page-corporate .ems-col-full span[id$="lblICR_METIN_TEMPLATE"] {
   width: 100%;
   height: 100%;
@@ -10903,6 +10927,12 @@ body.ems-signup-body .ems-page-default-member-login .ems-signup {
           content: "\e905"; }
       .ems-page-corporate .ems-col-full .ems-page-content .ems-sss-content-body ul li.selected .ems-sss-content-accordion {
         display: block; }
+
+@media (min-width: 850px) {
+  .ems-login .ems-col-full .navigasyon {
+    padding: 0;
+    margin-top: -10px;
+    padding-left: 30px; } }
 
 .pageMesajGonder {
   max-width: 890px;

@@ -47,7 +47,8 @@
             margin: 0;
             a{  
                 display: block;
-                img{max-width: 200px;}
+                img{max-width: 200px;
+                    max-height: 71px;}
             }
         }
     }
@@ -247,7 +248,7 @@ body.ems-logoff{
 
 @media screen and (min-width: 850px){
     .site-header{
-        min-height:155px;
+        min-height:143px;
         &-wrapper{
             position: fixed;
             top: 0;
