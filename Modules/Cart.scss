@@ -21,6 +21,8 @@
             font-size: 0;
             padding: 0;
         }
+        .site-header .ems-container-full-bottom .ems-col-2{justify-content: center;}
+        .mod-mini-search{display: none;}
     }
 }
 
@@ -97,6 +99,12 @@
     }
     &-step1{
         .ems-page-new-address .ems-form-inner .ems-field.tcChecked{ display: none;}
+        &.store-cargo{
+            .ems-cart-summary .ems-delivery-tab.ems-cargo-tab{display: none !important;}
+        }
+        &.ems-page-adress-none{
+            .ems-brand-selection{display: none;}
+        }
     }
 }
 .ems-page-cart-step1 {
@@ -282,13 +290,6 @@
                 }
             }
         }
-        &.btnDisable {
-            i {
-                &:before {
-                    
-                }
-            }
-        }
     }
 }
 
@@ -471,7 +472,7 @@ body.guest-checkout-layout{
                 }
             }
             .ems-grid-name {
-                width: 30%;
+                width: 20%;
                 span {
                     text-align: left;
                     display: inline-block;
@@ -479,15 +480,14 @@ body.guest-checkout-layout{
                 }
             }
             .ems-grid-piece {
-                width: 22%;
+                width: 25%;
             }
             .ems-grid-price {
-                width: 15%;
+                width: 22%;
                 text-align: center;
-                display: none;
             }
             .ems-grid-price-total {
-                width: 30%;
+                width: 22%;
                 text-align: center;
             }
             .ems-grid-delete {
@@ -522,8 +522,8 @@ body.guest-checkout-layout{
                 }
             }
             .ems-grid-name {
-                padding: 0 15px;
-                width: 30%;
+                padding: 0 0 0 15px;
+                width: 20%;
                 span {
                     font-size: 13px;
                     font-family: $regular;
@@ -614,14 +614,12 @@ body.guest-checkout-layout{
                 }
             }
             .ems-grid-price {
-                display: none;
-                width: 15%; 
+                width: 22%; 
                 text-align: center;
             }
-            .ems-grid-price-total {
-                width: 29%; 
+            .ems-grid-price-total, .ems-grid-price {
+                width: 22%; 
                 white-space: nowrap;
-                text-align: right;
                 &-inner{
                     @include flex();
                     @include flexDirection(row);
@@ -656,26 +654,15 @@ body.guest-checkout-layout{
                 span[id$="lblURN_NETTOPLAMFIYAT"]{
                     text-decoration: inherit !important;
                     position: relative;
-                    /*&:after{
-                        content: '';
-                        width: 100%;
-                        height: 2px;
-                        position: absolute;
-                        top: 50%;
-                        right: 0;
-                        background: #b3b3b3;
-                        @include setTransform(rotate(-10deg));
-                        margin-top: -1px;
-                    }*/
                 }
                 font {
                     text-align: center;
                     display: none;
                     font-size: 18px;
-                    &.brFiyat, &.topFiyat, &.satBrFiyat, &.satBrFiyatVrg, &.satBrFiyat, &.netFiyat{
+                    &.netFiyat{
                         display: none !important;
                     }
-                    &.netFiyatVrg{
+                    &.netFiyatVrg, &.satBrFiyat{
                         display: inline-block !important;
                         line-height: 1;
                         font-size: 25px;
@@ -702,9 +689,9 @@ body.guest-checkout-layout{
                         display: inline-block !important;
                     }
                     &.topFiyatVrg{
-                        padding-right: 5px;
+                        padding-right: 15px;
                     }
-                    &.brFiyatVrg, &.topFiyatVrg{  
+                    &.brFiyat{
                         line-height: 1;
                         font-family: $bold;
                         font-size: 16px;
@@ -716,10 +703,6 @@ body.guest-checkout-layout{
                             font-size: 13px;
                             color: #b3b3b3;
                             display: inline-block;
-                            float: left;
-                            position: relative;
-                            top: 3px;
-                            margin-right: 2px;
                         }
                         .d{
                             vertical-align: top;
@@ -1050,6 +1033,169 @@ body.guest-checkout-layout{
     margin: 0 auto;
     width: 100%;
     position: relative;
+
+    /* Magazadan al */
+    .ems-brand-selection{
+        background: #fff;
+        margin-bottom: 20px;
+        &-select{
+            .srv-kod-dsc{
+                width: 100%;
+                display: block;
+            }
+            
+            .magazadanTeslim.emos_invisible {
+                padding-top:20px;
+                .magazadanteslim-head {
+                width: 40%;
+                float: left;
+                margin-right: 10px;
+                text-align: right;
+            }
+            .magazadanteslim-header { text-align: left; }
+                .magazadanteslim-header img { float: left; }
+                .magazadanteslim-header p {
+                    font-size: 22px;
+                    line-height: 29px;
+                }
+                .magazadanteslimcontent {
+                    width: 55%;
+                    margin: 0 auto;
+                    text-align: center;
+                }
+                .magazadanteslimcontent p {
+                    font-size: 14px;
+                }
+                .magazadanteslimuyari {
+                    color: #12ABC2;
+                    text-align: center;
+                    font-weight: bold;
+                }
+                a{
+                    display: none !important;
+                    &:first-child{margin-right: 0;}
+                    &:hover{
+                        background: $btnColor;
+                    }
+                }
+            }
+        }
+        &-list{
+            .magazadanTeslimServis {
+                > .servisListeFiltreContainer.emos_invisible{
+                    display:flex !important;
+                    justify-content: flex-start;
+                    flex-direction: row;
+                    padding: 20px;
+                    width: 100%;
+                    > div{
+                        &:empty{display: none;}
+                        width: 25%;
+                        margin-left: 20px;
+                        .sStylerMainWrp.sStylerWrp_select .sStylerWrp{
+                            line-height: 28px;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                        }
+                        &:first-child{margin-left: 0;}
+                    }
+                }
+                .magazadanTeslimListe{
+                    padding: 0 20px 20px 20px;
+                    > select{display: none;}
+                    .sStylerMainWrp.sStylerWrp_select{
+                        width: auto;
+                        line-height: 28px;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        display: none;
+                    }
+                    .drp-srv-kod.dropdown{
+                        position: relative;
+                        > div{
+                            padding:15px 30px 15px 10px;
+                            border-color: #f3f5f9;
+                            border-style: solid;
+                            background: #fff;
+                            border-width: 2px 2px 2px 2px;
+                            position: relative;
+                            cursor: pointer;
+                            font-family: $medium;
+                            font-size: 14px;
+                            &:after{
+                                font-family: 'icomoon';
+                                content: "\e903";
+                                position: absolute;
+                                top: 50%;
+                                right: 10px;
+                                line-height: 1;
+                                margin-top: -6px;
+                                font-size: 12px;
+                                width: 12px;
+                                height: 12px;
+                                display: inline-block;
+                                color: #687083;
+                                @include setTransform(rotate(90deg));
+                            }
+                            > span{
+                                display: block;
+                                &:empty{display: none;}
+                            }
+                        }
+                        > ul{
+                            position: absolute;
+                            left: 0;
+                            width: 100%;
+                            height: auto;
+                            z-index: 1;
+                            padding:10px 15px 20px 15px;
+                            background: #fff;
+                            border-color: #f3f5f9;
+                            border-style: solid;
+                            background: #fff;
+                            border-width: 0px 2px 2px 2px;
+                            display: none;
+                            > li{
+                                padding-top: 10px;
+                                padding-left: 5px;
+                                font-family: $medium;
+                                font-size: 14px;
+                                border-bottom: 1px solid lightgray;
+                                padding-bottom: 10px;
+                                cursor: pointer;
+                                &:hover{
+                                    background-color: #ddd;
+                                }
+                                &:first-child{margin-top: 0;}
+                                > span{
+                                    display: block;
+                                    &:empty{display: none;}
+                                }
+                            }
+                        }
+                        &.opened{
+                            > div {
+                                border-bottom-color: transparent; 
+                            }
+                            > ul{ display: block;
+                                max-height: 230px;
+                                overflow-y: scroll; }
+                        }
+                    }
+                    &:empty{display: none;}
+                }
+                .magazaAdres{
+                    &:empty{display: none;}
+                    padding:20px;
+                    margin-bottom: 20px;
+                    border-top:1px solid #f3f5f9;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    display: none !important;
+                }
+            }
+        }
+    }
     .ems-grid-address {
         display: inline-block;
         width: 100%; 
@@ -1777,14 +1923,14 @@ body.guest-checkout-layout{
             }
         }
         .tableTitleDefault {display: none;}
-        table {
+        /*table {
             width: 100%;
             tbody{
-                tr{
+                tr {
                     display: table;
                     table-layout: fixed;
                     width: 100%;
-                    th, td{
+                    > th, > td{
                         display: table-cell;
                         vertical-align: middle;
                         text-align: center;
@@ -1806,14 +1952,13 @@ body.guest-checkout-layout{
                     }
                 }
             }
-        }
-        table.text-metin{
+        }*/
+        /*table.text-metin{
             tbody{
                 tr td{ width: 50% !important; text-align: left; }
                 tr td:first-child{font-family:'medium';}
             }
-        }
-        
+        }*/
         .onBilgilendirmeFormMetin{
             margin-top: 30px;
         }
@@ -1855,6 +2000,11 @@ body.guest-checkout-layout{
             background: #fff;
             padding: 20px 30px;
             width: 50%;
+            @media screen and (min-width: 850px){
+                min-height: 175px;
+                max-height: 175px;   
+                overflow: hidden;
+            }
         }
         .left {
             margin-right: 10px;
@@ -2035,6 +2185,7 @@ body.guest-checkout-layout{
             color: $lDark;
         }
     }
+    .cart-section-left .ems-cart-btn.prev{display: none;}
 }
 
 /* Sipariş Sonuç */
@@ -2257,6 +2408,7 @@ body.guest-checkout-layout{
         
     .ems-container-basket{
         background: #fff;
+        
     }
 
     .cart-section-left {
@@ -2301,6 +2453,7 @@ body.guest-checkout-layout{
                         }
                     }
                 }
+                .ems-grid-price{display: none;}
                 .ems-grid-piece {
                     width: auto;
                     margin-top: 10px;
@@ -2330,7 +2483,12 @@ body.guest-checkout-layout{
         .ems-cart-button{
             padding: 15px 10px;
             border-top: 2px solid $border;
-            display: none;
+            .ems-cart-btn.next{
+                text-align: right;
+                .ems-cart-btn-update{
+                    margin-right: 0px;
+                }
+            }
             .btnAlisverisDevam, .btnSepetGuncelle, .btnSepetBosalt {
                 margin-top: 0;
                 padding: 10px;
@@ -2385,6 +2543,52 @@ body.guest-checkout-layout{
         .page-top-title {
             span{ padding-left:20px; }
         }
+        /* Magazadan al */
+        .ems-brand-selection{
+            &-select{
+             
+                .magazadanTeslim.emos_invisible {
+                    .magazadanteslim-head { width: 20%;}
+                }
+            }
+            &-list{
+                .magazadanTeslimServis {
+                    > .servisListeFiltreContainer.emos_invisible{
+                        display:flex !important;
+                        flex-direction: column;
+                        padding: 20px;
+                        width: 100%;
+                        > div{
+                            &:empty{display: none;}
+                            width: 100%;
+                            margin-left: 0;
+                            margin-bottom: 20px;
+                            &.dvServisListeleBtn{
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                    .magazadanTeslimListe{
+                        padding: 0 20px 20px 20px;
+                        .sStylerMainWrp.sStylerWrp_select .sStylerWrp{
+                            width: auto;
+                            line-height: 28px;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                        }
+                        &:empty{display: none;}
+                    }
+                    .magazaAdres{
+                        &:empty{display: none;}
+                        padding:20px;
+                        margin-bottom: 20px;
+                        border-top:1px solid #f3f5f9;
+                        margin-left: 20px;
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
         .ems-grid-address {
             padding: 0 20px;
             .ems-grid-row {
@@ -2394,6 +2598,7 @@ body.guest-checkout-layout{
                 padding:20px 50px 20px 20px;
                 border: 2px solid $border;
                 margin-top: 20px;
+                height: 190px;
                 &:first-child{
                     margin-top: 10px;
                 }
@@ -2750,6 +2955,9 @@ body.guest-checkout-layout{
 
 }
 
+.srv-kod-dsc{
+    display: none;
+}
 
 
 /**/

@@ -44,6 +44,8 @@
     .order-address {
         border: 1px solid $inputborder;
         display: inline-block;
+        vertical-align: top;
+        min-height: 170px;
         width: 50%;
         padding: 30px;
         margin: 30px 0;
@@ -88,6 +90,7 @@
                     text-align: left;
                     font-family: $regular;
                     padding-right: 5px;
+                    &:empty{display: none; }
                 }
                 .value {
                     width: 45%;
@@ -96,6 +99,7 @@
                     font-family: $regular;
                     font-size: 15px;
                     text-align: right;
+                    &:empty{display: none; }
                 }
                 &.member-point, &.bank-point{ display: none; }
                 &.total {
@@ -186,12 +190,11 @@
     }
     .order-cancel {
         .text{
+            text-align: right;
+            &:empty{display: none;}
             .btnDefault{
-                text-transform: inherit;
                 width: auto;
-                background: none;
-                padding:10px 0 10px 0;
-                color: $redColor;
+                padding:15px;
                 margin-top: 10px;
             }
         }
@@ -204,7 +207,7 @@
             max-width: 250px;
         }
     }
-    .dvTumunuIptalEtBox {
+    .dvTumunuIptalEtBox, .tumunuIptalEtContainer {
         .dvTumunuIptalSfiSprBox, .dvTumunuIptalBtn{
             width: 45%;
             display: inline-block;
@@ -228,7 +231,12 @@
             margin-top: 20px;
             margin-bottom: 20px;
         }
-        span[id$="lbfSIP_IPTALBASLIK"]{display:none;}
+        span[id$="lbfSIP_IPTALBASLIK"]{
+            .ems-message-error{
+                margin-top: 20px;
+                margin-bottom: 0;
+            }
+        }
         .ems-message{
             &-success{
                 margin-bottom: 20px;
