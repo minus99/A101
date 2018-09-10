@@ -1,6 +1,7 @@
 .footer-explanation{
     max-width: 1200px;
     margin: 30px auto;
+    float: left;
     span.showLess, span.showMore{
         display: block;
         clear: both;
@@ -19,7 +20,7 @@
         .showMore{margin-top: 20px;}
     }
     h1{
-        margin: 0;
+        margin: 0; 
         font-weight: normal;
         font-size: 14px;
     }
