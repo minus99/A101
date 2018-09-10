@@ -1,3 +1,30 @@
+.footer-explanation{
+    max-width: 1200px;
+    margin: 30px auto;
+    span.showLess, span.showMore{
+        display: block;
+        clear: both;
+        cursor: pointer;
+        color: #10aac1;
+        font-family: $medium;
+        color: $lDark;
+        text-align: center;
+    }
+    .less, .more{
+        border: 1px solid $border;
+        padding: 30px;
+        p{ margin-top: 0; }
+    }
+    .less{
+        .showMore{margin-top: 20px;}
+    }
+    h1{
+        margin: 0;
+        font-weight: normal;
+        font-size: 14px;
+    }
+}
+
 .site-footer{
     background-color: #fff;
     padding-bottom: 50px;

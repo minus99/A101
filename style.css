@@ -9657,6 +9657,29 @@ body.guest-checkout-layout .ems-page-cart-colmn-3, body.guest-checkout-layout .e
   body.sort-popup-animate .ems-mobile-fixed-popup {
     bottom: 0; } }
 
+.footer-explanation {
+  max-width: 1200px;
+  margin: 30px auto; }
+  .footer-explanation span.showLess, .footer-explanation span.showMore {
+    display: block;
+    clear: both;
+    cursor: pointer;
+    color: #10aac1;
+    font-family: "medium";
+    color: #1e2432;
+    text-align: center; }
+  .footer-explanation .less, .footer-explanation .more {
+    border: 1px solid #e8eaf1;
+    padding: 30px; }
+    .footer-explanation .less p, .footer-explanation .more p {
+      margin-top: 0; }
+  .footer-explanation .less .showMore {
+    margin-top: 20px; }
+  .footer-explanation h1 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 14px; }
+
 .site-footer {
   background-color: #fff;
   padding-bottom: 50px; }
