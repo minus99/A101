@@ -9659,7 +9659,8 @@ body.guest-checkout-layout .ems-page-cart-colmn-3, body.guest-checkout-layout .e
 
 .footer-explanation {
   max-width: 1200px;
-  margin: 30px auto; }
+  margin: 30px auto;
+  padding-top: 30px; }
   .footer-explanation span.showLess, .footer-explanation span.showMore {
     display: block;
     clear: both;
