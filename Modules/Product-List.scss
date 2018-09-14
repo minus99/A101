@@ -900,7 +900,7 @@ body.filter-popup-ready{
         &.prd-list-s1{
             .ems-container{
                 .ems-col-left .ems-prd-list-discountFlg,
-                .ems-container-right-reset .ems-container.ems-cell-1{display: none;}
+                .ems-container-right-reset .ems-container.ems-cell-1{}
             }
         }
     }
@@ -1259,4 +1259,11 @@ body.filter-popup-ready{
             }
         }
     }
+}
+
+
+/* En Çok Satanlar ve Yeni Ürünler Sayfası */
+
+.ems-page-list-new-products , .ems-page-list-best-selling{
+    padding-top:20px; 
 }
