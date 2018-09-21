@@ -685,11 +685,11 @@ body.guest-checkout-layout{
                             font-size: 16px;
                         }
                     }
-                    &.netFiyatVrg, &.topFiyatVrg{
+                    &.netFiyatVrg{
                         display: inline-block !important;
                     }
-                    &.topFiyatVrg{
-                        padding-right: 15px;
+                    &.topFiyatVrg , &.topFiyat{
+                        padding-right: 10px;
                     }
                     &.brFiyat{
                         line-height: 1;
