@@ -763,6 +763,12 @@ body.ems-logoff{
                                 }
                             }
                         }
+                        /* Mobile Menu İmage bulunan kategorilerin gizlenmesi.  */
+                        > li{
+                            &:nth-child(2){
+                                display: none;
+                            }
+                        }
                     }
                 }
                 > ul.sub-nav{

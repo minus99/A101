@@ -813,35 +813,37 @@
 
 
 @media screen and (max-width: 960px) {
- /*  Only Homepage Mobile Banners*/
-    .homepage-banner-item {
-        width: 94%;
-        margin: 10px auto;
-        position: relative;
-
-        .mobile-banner-img {
-            width: 100%;
-        }
-
-        .mobile-banner-text {
-            position: absolute;
-            left: 20px;
-            top: 40px;
-            color: #1e2432;
-            font-size: 20px;
-            width: 100%;
-            font-family: 'medium';
-        }
-
-        a {
-            position: absolute;
-            left: 20px;
-            bottom: 20px;
-            padding: 10px;
-            background: #fddb01;
-            text-transform: uppercase;
-            font-family: 'medium';
-            font-size: 13px;
-        }
-    }
-}
+    /*  Only Homepage Mobile Banners*/
+       .homepage-banner-item {
+           width: 94%;
+           margin: 10px auto;
+           position: relative;
+           a{
+               display:block;
+           }
+           .mobile-banner-img {
+               width: 100%;
+           }
+   
+           .mobile-banner-text {
+               position: absolute;
+               left: 20px;
+               top: 40px;
+               color: #1e2432;
+               font-size: 20px;
+               width: 100%;
+               font-family: 'medium';
+           }
+   
+           .mobile-banner-btn {
+               position: absolute;
+               left: 20px;
+               bottom: 20px;
+               padding: 10px;
+               background: #fddb01;
+               text-transform: uppercase;
+               font-family: 'medium';
+               font-size: 13px;
+           }
+       }
+   }
